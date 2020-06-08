@@ -6,7 +6,6 @@ apply plugin: 'MyFirstPlugin'
 android {
     compileSdkVersion 29
 
-
     defaultConfig {
         applicationId "com.magicbluepenguin.pluginsample"
         minSdkVersion 23
@@ -19,6 +18,13 @@ android {
         release {
             minifyEnabled false
         }
+    }
+
+    String dimen = "palette"
+    flavorDimensions dimen
+    productFlavors {
+        reds { dimension dimen }
+        greens { dimension dimen }
     }
 }
 
