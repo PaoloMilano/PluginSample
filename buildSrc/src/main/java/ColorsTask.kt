@@ -5,7 +5,7 @@ import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-internal open class ColorsTask : DefaultTask(){
+internal open class ColorsTask : DefaultTask() {
     @get:OutputFile
     lateinit var outputFile: File
 

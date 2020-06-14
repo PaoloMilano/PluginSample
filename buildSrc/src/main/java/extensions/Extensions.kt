@@ -1,6 +1,5 @@
 package extensions
 
-import android.databinding.tool.util.StringUtils
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.BaseExtension
 import com.android.build.gradle.FeatureExtension
@@ -10,8 +9,6 @@ import org.gradle.api.DomainObjectSet
 import org.gradle.api.GradleException
 import org.gradle.api.Project
 import java.io.File
-import java.util.*
-import java.util.regex.Pattern
 
 fun Project.android(): BaseExtension {
     val android = project.extensions.findByType(BaseExtension::class.java)
